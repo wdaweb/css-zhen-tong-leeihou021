@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .first {
+        width: 400px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+
+        background:
+
+
+            linear-gradient(90deg, rgba(255, 255, 255, 0.788)50% 45%, black 45% 55%, rgba(255, 255, 255, 0) 50% 50%),
+
+            linear-gradient(360deg, rgb(240, 240, 160)0%, rgb(208, 208, 139), rgba(240, 240, 160, 0)),
+            repeating-linear-gradient(to left, rgb(0, 0, 0) 0.5px 1%, rgba(255, 255, 255, 0) 1px 10%),
+            linear-gradient(to bottom, rgba(240, 240, 160, 0.596), rgba(208, 208, 139, 0.493), rgba(240, 240, 160, 0.589)),
+            repeating-linear-gradient(to left, black 0.5px 1%, white 1px 10%);
+        text-align: left;
+        line-height: 180px;
+    }
+
+    .first::before {
+        content: '';
+        width: 600px;
+        height: 70px;
+        border: 1px solid black;
+        border-radius: 9px;
+        position: absolute;
+        left: -100px;
+        top: 15%;
+        background: linear-gradient(0deg, rgb(243, 243, 243)0%, rgb(205, 205, 205), rgb(243, 243, 243));
+        z-index: -1;
+
+
+    }
+
+    .first::after {
+        content: '';
+        width: 60px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        left: -100px;
+        top: 0;
+        border-radius: 9px;
+        background: linear-gradient(0deg, rgb(243, 243, 243)0%, rgb(205, 205, 205), rgb(243, 243, 243));
+
+
+    }
+
+    hr {
+        width: 200px;
+        height: 4px;
+        background: black;
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        z-index: -2;
+    }
+</style>
+
+<body>
+    <hr>
+    <div class="first">
+        Made in Taiwan
+    </div>
+</body>
+
+</html>
